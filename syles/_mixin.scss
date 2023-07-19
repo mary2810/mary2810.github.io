@@ -1,0 +1,21 @@
+@mixin parent_width() {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin flex($alignItems: flex-start, $justify_content: flex-start) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justify_content;
+
+}
+@mixin button() {
+    padding: $spacing * 2 $spacing * 5;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    color: white;
+}
+@mixin grid($grid_template_columns: auto, $grid_template_rows: auto) {
+display: grid;
+grid-template-columns: $grid_template_columns;
+grid-template-rows: $grid_template_rows;
+}
